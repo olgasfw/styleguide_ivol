@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>iVolunteers Style Guide</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+
+
+	<!-- Pulled from getbootstrap.com to display Example/Coding  -->
+	<link href="css/main.css" rel="stylesheet">
+
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900|Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+
+	<!-- font awesome (for icons) css -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<!-- Smooth scroll between anchors on the page -->
+	<script type="text/javascript" src="js/smoothscroll.js"></script>
+
+
+	<!-- "read more" panel slide-down/slide-up @ 768px breakpoint -->
+	<script>
+		$(document).ready(function () {
+			$("#flip_about").click(function () {
+				$("#panel_about").slideToggle("slow");
+			});
+		});
+
+		$(document).ready(function () {
+			$("#flip_color").click(function () {
+				$("#panel_color").slideToggle("slow");
+			});
+		});
+
+		$(document).ready(function () {
+			$("#flip_fonts").click(function () {
+				$("#panel_fonts").slideToggle("slow");
+			});
+		});
+
+
+		$(document).ready(function () {
+			$("#flip_images").click(function () {
+				$("#panel_images").slideToggle("slow");
+			});
+		});
+
+
+		$(document).ready(function () {
+			$("#flip_ui").click(function () {
+				$("#panel_ui").slideToggle("slow");
+			});
+		});
+
+		$(document).ready(function () {
+			$("#flip_navigation").click(function () {
+				$("#panel_navigation").slideToggle("slow");
+			});
+		});
+
+		$(document).ready(function () {
+			$("#flip_form").click(function () {
+				$("#panel_form").slideToggle("slow");
+			});
+		});
+
+
+		$(document).ready(function () {
+			$("#flip_grid").click(function () {
+				$("#panel_grid").slideToggle("slow");
+			});
+		});
+
+
+
+		<!-- Reset GIF animation by clicking on the image-->
+
+		$(function () {
+
+			$('.reset').click(resetGif);
+
+			function resetGif() {
+				$('.img1').removeAttr('src', '');
+			}
+		});
+	</script>
+
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse  navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-11">
+					<h1 class="sg-logo roboto sg_logo">
+
+   <img src="assets/sg/i360-logo.png" alt="i-360">
+         <span>  iVOLUNTEERS  </span>   DRAFT STYLE GUIDE </h1>
+
+				</div>
+				<div class=" col-xs-1">
+					<a href="#menu-toggle" class="btn  btn-xs pull-right sg_btn_menu" id="menu-toggle"> MENU</a>
+				</div>
+
+
+			</div>
+		</div>
+
+	</nav>
+
+	<div id="wrapper">
+
+		<!-- Sidebar -->
+		<div id="sidebar-wrapper">
+
+
+			<h2 class="sg-h2"> 
+        <a href="#overview" id="flip_about" class="smoothScroll"> Overview</a>
+             </h2>
+
+			<h2 class="sg-h2 sg-subnav-title">
+             <a href="javascript:void(0);"   id="flip_color"> Color Pallet</a>
+             </h2>
+			<ul class="sg-navlist" id="panel_color">
+				<li>
+					<a href="#color_default" class="smoothScroll">Default Color</a>
+					<a href="#color_client" class="smoothScroll">Custom Colors</a>
+				</li>
+			</ul>
+			<h2 class="sg-h2 sg-subnav-title"><a href="javascript:void(0);" id="flip_fonts">Fonts</a></h2>
+			<ul class="sg-navlist" id="panel_fonts">
+				<li>
+					<a href="#fonts_type" class="smoothScroll">Typography</a>
+					<a href="#fonts_icons" class="smoothScroll">Iconography</a>
+				</li>
+			</ul>
+
+			<h2 class="sg-h2 sg-subnav-title"><a href="javascript:void(0);" id="flip_images">Images</a></h2>
+
+			<ul class="sg-navlist" id="panel_images">
+				<li>
+					<a href="#images_thumbnail" class="smoothScroll">Thumbnail</a>
+					<a href="#images_top_priority" class="smoothScroll">Top Priority</a>
+					<a href="#images_header_bg" class="smoothScroll">Header background</a>
+					<a href="#images_full_bg" class="smoothScroll">Full Page Background</a>
+					<a href="#images_logo" class="smoothScroll">Logo</a>
+				</li>
+			</ul>
+			<h2 class="sg-h2 sg-subnav-title">
+                 <a href="javascript:void(0);" id="flip_ui">UI Components</a></h2>
+			<ul class="sg-navlist" id="panel_ui">
+				<li><a href="#ui_headline" class="smoothScroll">Main Header</a></li>
+				<li><a href="#ui_subheader" class="smoothScroll">Secondary Header</a></li>
+				<li><a href="#ui_sidepanel" class="smoothScroll">Side Panel</a></li>
+				<li><a href="#ui_thumbcard" class="smoothScroll">Thumbnail Card</a></li>
+				<li><a href="#ui_thumblist" class="smoothScroll">Thumbnail List</a></li>
+				<li><a href="#ui_userstats" class="smoothScroll">User Stats</a></li>
+				<li><a href="#ui_social" class="smoothScroll">Social Buttons</a></li>
+
+			</ul>
+
+
+			<h2 class="sg-h2 sg-subnav-title"><a href="javascript:void(0);" id="flip_navigation">Navigation</a></h2>
+
+			<ul class="sg-navlist" id="panel_navigation">
+				<li><a href="#navigation_header" class="smoothScroll">Header Navigation</a> </li>
+				<li><a href="#navigation_page" class="smoothScroll">Page Level Navigation </a> </li>
+				<li><a href="#navigation_footer" class="smoothScroll">Footer Navigation</a> </li>
+			</ul>
+
+
+			<h2 class="sg-h2 sg-subnav-title"><a href="javascript:void(0);" id="flip_form">Form Elements</a></h2>
+
+			<ul class="sg-navlist" id="panel_form">
+				<li><a href="#form_basic" class="smoothScroll">Basic Form</a> </li>
+				<li><a href="#form_legend" class="smoothScroll">Form Legend</a> </li>
+				<li><a href="#form_buttons" class="smoothScroll">Buttons</a> </li>
+			</ul>
+
+			<h2 class="sg-h2 sg-subnav-title"><a href="javascript:void(0);" id="flip_grid">Grid</a></h2>
+			<ul class="sg-navlist" id="panel_grid">
+				<li><a href="#grid_overview" class="smoothScroll">Grid Overview</a> </li>
+				<li><a href="#grid_options" class="smoothScroll">Grid Options</a> </li>
+				<li><a href="#grid_ordering" class="smoothScroll">Columnt Ordering</a> </li>
+				<li><a href="#grid_visibility" class="smoothScroll">Element Visibility</a> </li>
+			</ul>
+
+
+		</div>
+		<!-- /#sidebar-wrapper -->
+
+		<!-- Page Content -->
+
+		<div id="page-content-wrapper">
+
+			<div class="container-fluid">
+
+				<article class="about">
+
+					<h2 id="overview">Overview</h2>
+
+					<p class="lead">The iVolunteers style guide is a user interface component library designed to promote visual consistency, unify visual design and aid in any future development of the iVolunteers system. This working document should get updated, should any new components get added or the existing ones modified. The look and feel of each iVolunteers instance may be customized through the admin tool to reflect the client brand identity: <a href="#images_logo" class="smoothScroll">logo</a>, <a href="#color_client" class="smoothScroll">color scheme</a> of select elements and <a href="#navigation_footer" class="smoothScroll">footer navigation</a>.</p>
+
+				</article>
+
+
+				<!--------COLOR---------->
+				<article class="color">
+
+
+					<h2 id="sg-colors">Color Pallet</h2>
+
+					<h3 id="color_default">Default Color</h3>
+					<p>Neutral <strong>greys</strong>, used for text and backgrounds, blue, reserved for <strong>links</strong>, brand-specific <strong>accent</strong> green, used throughout the application for navigation, task performance and content highlight purposes, and <strong>alert</strong> red, used for error messaging and missing fields identification, are part of the iVolunteers template color scheme. </p>
+
+					<div class="sg-color-grid">
+
+
+						<div class="sg-color">
+							<div class="sg-color-swatch" style="background-color: #e4e4e4;"></div>
+							<div class="sg-color-value">#e4e4e4</div>
+							<div class="sg-color-name">light-grey</div>
+						</div>
+
+						<div class="sg-color">
+							<div class="sg-color-swatch" style="background-color: #ccc;"></div>
+							<div class="sg-color-value">#ccc</div>
+							<div class="sg-color-name">med-grey</div>
+						</div>
+
+
+						<div class="sg-color">
+							<div class="sg-color-swatch" style="background-color: #999;"></div>
+							<div class="sg-color-value">#999</div>
+							<div class="sg-color-name">dark-grey</div>
+						</div>
+
+
+
+						<div class="sg-color">
+							<div class="sg-color-swatch" style="background-color: #337ab7;"></div>
+							<div class="sg-color-value">#337ab7</div>
+							<div class="sg-color-name">link</div>
+						</div>
+
+
+						<div class="sg-color">
+							<div class="sg-color-swatch" style="background-color: #178552"></div>
+							<div class="sg-color-value">#178552</div>
+							<div class="sg-color-name">accent</div>
+						</div>
+
+
+
+						<div class="sg-color">
+							<div class="sg-color-swatch" style="background-color: #e32"></div>
+							<div class="sg-color-value">#e32</div>
+							<div class="sg-color-name">alert</div>
+						</div>
+					</div>
+
+
+					<h3 id="color_client">Customizable Color</h3>
+
+					<p>
+
+						The generic link blue, alert red and the accent green colors, such as those used in for header and page level navigation, buttons, thumbnail tags and user stats, may be overridden by those selected by the client. </p>
+
+
+
+
+					<div class="row">
+						<div class="col-sm-12">
+							<h4 class="sg">Links  </h4>
+							<p>This is an example of a <a href="javascript:void(0);" title="this is an example of a iVolunteers generic link">default iVolunteers link</a>. Default links are of the same weight as the parent element and are darker and underlined on mouse over (Bootstrap). </p>
+						</div>
+
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12">
+							<h4 class="sg">Alert  <a href="#form_basic" class="smoothScroll details">see details</a></h4>
+							<p>Missing input form fields and their descriptive placeholders are denoted by <span style="color: #e32;">alert red</span>.</p>
+						</div>
+
+					</div>
+
+
+
+
+
+					<div class="row">
+						<div class="col-sm-12">
+							<h4 class="sg">
+       Header & Page Level Navigation Links <a href="#navigation_header" class="smoothScroll details">see details</a></h4>
+							<div class="bs-example  image-example">
+
+
+
+
+								<div class="row">
+									<div class="col-sm-5">
+										<img src="assets/sg/sg_cust_%20mainnav.png" alt="screenshot" class="img-responsive"></div>
+
+									<div class="col-sm-7">
+										<img src="assets/sg/sg_cust_%20pagenav.png" alt="screenshot" class="img-responsive"></div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-4">
+							<h4 class="sg">Buttons <a href="#form_buttons" class="smoothScroll details">see details</a></h4>
+							<div class="bs-example  image-example" style="min-height: 155px;">
+
+								<div class="row">
+									<div class="col-sm-12"><img src="assets/sg/sg_cust_%20bottons.png" alt="screenshot" class="img-responsive"></div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="col-sm-4">
+
+							<h4 class="sg">Thumbnail Tags <a href="#ui_thumbcard" class="details smoothScroll">see details</a></h4>
+							<div class="bs-example  image-example" style="min-height: 155px;">
+
+								<div class="row">
+									<div class="col-sm-12"><img src="assets/sg/sg_cust_%20tag.png" alt="screenshot" class="img-responsive"></div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="col-sm-4">
+
+							<h4 class="sg">User Stats <a href="#ui_userstats" class="details smoothScroll">see details</a></h4>
+							<div class="bs-example  image-example" style="min-height: 155px;">
+
+								<div class="row">
+									<div class="col-sm-12"><img src="assets/sg/sg_cust_%20highlight.png" alt="screenshot" class="img-responsive"></div>
+								</div>
+
+							</div>
+
+
+
+						</div>
+					</div>
+
+	</article>
+
+
+				<!---------FONTS-------->
+				<article class="fonts">
+
+					<h2 id="typography">Fonts</h2>
+
+
+					<h3 id="fonts_type">Typography</h3>
+
+
+					<p class="sg_font_spec">Primary Font: <span class="roboto">Roboto, sans-serif</span></p>
+
+					<p class="sg_font_spec">Secondary Font: <span class="roboto-slab">Roboto Slab, serif</span></p>
+
+
+
+					<p>Roboto & Roboto Slab are Google fonts that come is varying weights. Roboto is the main content fornt while Roboto Slab is used titles mainly. For more details on the font-family, please refer to <a href="https://www.google.com/fonts" target="_blank">Google Fonts API</a>.</p>
+
+					<figure class="highlight">
+						<pre><code class="language-html">&lt;link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Roboto+Slab:100,300,400,700' rel='stylesheet' type='text/css'&gt;</code></pre>
+					</figure>
+
+
+
+
+
+
+					<!--/.sg-font-stacks-->
+
+
+
+
+					<h3 id="fonts_icons">Iconography</h3>
+
+
+
+					<p>
+
+						The <a href="http://getbootstrap.com/components/#glyphicons" target="_blank">Bootstrap Glyphicons</a> library is used to render icons. On how to incorporate icons into page Subheaders, <a href="#ui_subheader" class="smoothScroll example">follow this link</a>.
+
+					</p>
+
+
+					<figure class="highlight">
+						<pre><code class="language-html">&lt;link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"&gt;</code>
+                        
+                        
+                        </pre>
+
+
+					</figure>
+
+					<table class="table table-hover table-sg">
+						<thead>
+							<tr>
+								<th>Icon</th>
+								<th>Usage</th>
+								<th>Markup</th>
+							</tr>
+						</thead>
+						<tbody>
+
+
+
+							<tr>
+								<td>
+									<span class='glyphicon glyphicon-lock ' aria-hidden='true'></span></td>
+								<td> <strong>Log In Credentials</strong> (Account Settings) </td>
+								<td>
+									<figure class="highlight"> <pre><code  class="language-html">&lt;span class='glyphicon glyphicon-lock' aria-hidden='true'&gt;&lt;/span&gt;</code></pre></figure>
+								</td>
+							</tr>
+
+
+
+
+							<tr>
+								<td><span class='glyphicon  glyphicon-tags icon-sg' aria-hidden='true'></span></td>
+								<td><strong>Personal Interests</strong> (Account Settings)</td>
+								<td>
+									<figure class="highlight"><pre>&lt;span class='glyphicon  glyphicon-tags icon-large' aria-hidden='true'&gt;&lt;/span&gt;</pre></figure>
+								</td>
+							</tr>
+
+							<tr>
+								<td><span class='glyphicon glyphicon-user' aria-hidden='true'></span></td>
+								<td><strong>Personal Information</strong> (User Profile)</td>
+								<td>
+									<figure class="highlight"><pre>&lt;span class='glyphicon glyphicon-user' aria-hidden='true'&gt;&lt;/span&gt;</pre></figure>
+								</td>
+							</tr>
+
+
+							<tr>
+								<td><span class='glyphicon glyphicon-map-marker' aria-hidden='true'></span ></td>
+                               <td><strong>Current Address</strong> (User Profile)</td>
+                               <td>
+                                   <figure class="highlight"><pre>&lt;span class='glyphicon glyphicon-map-marker' aria-hidden='true'&gt;&lt;/span&gt;</pre></figure></td>
+                           </tr>
+                           
+                           
+                                   <tr>
+<td>       
+<span class='glyphicon  glyphicon-earphone' aria-hidden='true'></span></td>
+								<td><strong>Contact Information</strong> (User Profile); Survey Thumbnail Card, Submenu on Home Screen)</td>
+								<td>
+									<figure class="highlight"><pre>&lt;span class='glyphicon  glyphicon-earphone' aria-hidden='true'&gt;&lt;/span&gt;</pre></figure>
+								</td>
+							</tr>
+
+
+							<tr>
+								<td class="table-sg">
+									<span class='glyphicon  glyphicon-pencil' aria-hidden='true'></span></td>
+								<td><strong>Petition</strong> (Thumbnail Cards, Submenu on Home Screen)</td>
+								<td>
+									<figure class="highlight"><pre>&lt;span class='glyphicon  glyphicon-earphone' aria-hidden='true'&gt;&lt;/span&gt;</pre></figure>
+								</td>
+							</tr>
+
+
+
+
+
+						</tbody>
+					</table>
+
+
+				</article>
+
+
+				<!---------IMAGES SECTION  --------->
+
+
+
+
+
+
+				<article class="images">
+
+
+					<h2>Images</h2>
+
+
+					<div class="row">
+						<div class="col-sm-12">
+
+							<h3 id="images_thumbnail">Thumbnail Image
+                            
+                                       <a href="assets/sg/image_placeholders/344x172_thumb.jpg" target="_blank" class="details">view sample image</a>
+                            
+                            </h3>
+
+
+							<ul>
+								<li>Use: Homepage, Signed Petitions & Call History
+								</li>
+								<li>Responsive: Yes (scales up & down from 1220px on view port decrease)
+								</li>
+								<li>Ratio: 2:1
+								</li>
+								<li>Size: 344 x 172 px
+
+
+								</li>
+
+
+
+							</ul>
+
+
+
+						</div>
+
+
+					</div>
+
+					<div class="row">
+
+						<div class="col-sm-12">
+							<h3 id="images_top_priority">Top Priority Image 
+                            <a href="assets/sg/image_placeholders/936x312_top-priority.jpg" target="_blank" class="details">view sample image </a>
+                            
+                            </h3>
+							<ul>
+								<li>Use: Homepage
+
+								</li>
+								<li>Responsive: Yes (scales down only)
+								</li>
+								<li>Ratio: 3:1
+								</li>
+								<li>Size: 936 x 312 px </li>
+
+							</ul>
+						</div>
+
+
+					</div>
+
+
+
+
+					<div class="row">
+						<div class="col-sm-12">
+
+							<h3 id="images_header_bg">Header Background Image  <a href="assets/sg/image_placeholders/1352x338_bg.jpg" target="_blank" class="details">view sample image</a></h3>
+							<ul>
+								<li>Two layered background images are used to achieve the desired effect where the <a href="assets/bg_overlay.png" target="_blank" title="view gradient image">top image is a gradient .png file</a> with a transparent center feathering into black horizontally. <a href="#ui_headline" class="smoothScroll">See H1 Header (Petition) example</a>.
+								</li>
+								<li>Responsive: No
+								</li>
+								<li>Ratio: 4:1
+								</li>
+								<li>Size: 1352 x 338 px </li>
+
+
+							</ul>
+						</div>
+					</div>
+
+
+					<div class="row">
+
+
+
+
+
+
+
+						<div class="col-sm-12">
+							<h3 id="images_full_bg">Full Page Background 
+                            <a href="assets/sg/image_placeholders/full-screen_bg.jpg" target="_blank" class="details">view sample image</a>
+                            </h3>
+							<ul>
+								<li>Use: Call Center
+								</li>
+								<li>Responsive: Yes
+								</li>
+								<li> Ratio: ~ 2:1
+								</li>
+								<li>Min-width: 1750 px
+								</li>
+
+							</ul>
+						</div>
+					</div>
+
+
+
+					<div class="row">
+
+						<h3 id="images_logo">Logo </h3>
+						<ul>
+
+							<li>Client logos may be in .gif or .png files (transparency supported) </li>
+
+
+							<li>Max-width: 250 px</li>
+							<li>Max-height: 60 px</li>
+
+
+
+							<li>
+								Size: ~ 150 x 60 px
+							</li>
+
+						</ul>
+
+
+
+
+						<div class="bs-example image-example">
+
+							<div class="row">
+
+
+								<div class="col-md-3 col-xs-6" style="height: 90px; margin-bottom: 20px;">
+									<p>151 x 60 px</p>
+									<img src="assets/sg/sample-logos/afp-black.png" class="image-example">
+
+
+
+								</div>
+								<div class="col-md-3 col-xs-6" style="height: 90px; margin-bottom: 20px;">
+									<p>170 x 50 px </p><img src="assets/sg/sample-logos/citizenlink.png" alt="screenshot" class="image-example"> </div>
+
+								<div class="col-md-3 col-xs-6" style="height: 90px; margin-bottom: 20px;">
+									<p>120 x 50 px</p>
+									<img src="assets/sg/sample-logos/genopp-logo.png" alt="screenshot"> </div>
+
+								<div class="col-md-3 col-xs-6" style="height: 90px; margin-bottom: 20px;">
+
+									<p>170 x 60 px</p><img src="assets/sg/sample-logos/KasichLogo.png" alt="screenshot" style="height: 60px; width: auto;"> </div>
+							</div>
+
+
+						</div>
+
+					</div>
+
+
+
+
+				</article>
+
+
+				<!--------UI COMPONENTS---------->
+				<article class="ui-components">
+
+					<h2>UI Components</h2>
+					<h3 id="ui_headline">Main Header <span>(+/-Subheader)</span></h3>
+
+					<p>Every iVolunteers screen has a <strong>main header</strong>, and there is a number of ways to display one in the application. <strong>Subheader</strong> is optional and is present on the landing Call Center Screen and on the Petition related screens. </p>
+
+					<p>Character counts on Petition and Call Center screens:
+
+					</p>
+					<ul>
+						<li>Main Header: 72 characters max</li>
+						<li>Subheader: 80 characters max</li>
+					</ul>
+
+
+
+					<h4 class="sg"> H1 Header <span>(Petition)</span></h4>
+					<p>Main header, <code>h1.petitions-header</code> and subheader <code>p.petitions-header</code>, are placed on top of the <a href="#images_header_bg" class="smoothScroll">layered header  background images</a> on Petitions screens and its corresponding Thank You screen sequence. </p>
+					<ul>
+						<li>Main Header: 72 characters max</li>
+						<li>Subheader: 80 characters max</li>
+					</ul>
+					<div class="bs-example image-example image-padded">
+
+						<img src="assets/sg/sg_header_petition.png" alt="screenshot" class="img-responsive">
+
+					</div>
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" > 
+&lt;div class="container-fluid petition-imagery"&gt;
+&lt;div class="container petitions-inner-wrapper"&gt;
+&lt;div class="container container-petitions"&gt;
+&lt;h1 class="petitions-header"&gt; Stand up for Your Second Amendment Rights&lt;/h1&gt;
+&lt;p class="petitions-subheader"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;                  
+</code>
+</pre>
+					</figure>
+
+					<h4 class="sg"> H1 Header <span>(Call Center)</span></h4>
+					<p>
+						Main header, <code>h1.hero-h1</code> and subheader<code> p.lead</code>, are nested in a <code>.row</code> on a Survey Call Center landing screens.
+
+					</p>
+
+					<ul>
+						<li>Main Header: 72 characters max</li>
+						<li>Subheader: 80 characters max</li>
+					</ul>
+
+					<div class="bs-example image-example image-padded">
+
+						<img src="assets/sg/sg_header_callcenter.png" alt="screenshot" class="img-responsive">
+
+					</div>
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" > 
+&lt;div class="row"&gt;
+&lt;div class="col-md-6 call-center-block"&gt;
+&lt;h1 class="hero-h1"&gt;Our Call Center Makes It Easy For You To Make A Difference&lt;/h1&gt;
+&lt;p class="lead"&gt;Simply push this button to start making calls, and answer the survey questions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;                
+</code>
+</pre>
+					</figure>
+
+					<h4 class="sg">Legend as Page Header <span>(Sign Up & Log In Screens)</span></h4>
+					<p>
+						Sign Up to Volunteer and Log Into your Account screens contain forms; thus, <code>legend</code> legend is used for page header. When the form is centered on the screen, so legend text is centered as well.
+
+					</p>
+					<div class="bs-example image-example">
+
+
+
+
+						<div class="row">
+
+							<div class="col-sm-6">
+
+								<fieldset class="signup-fieldset">
+									<legend class="signup-form-legend">Sign Up to Volunteer</legend>
+								</fieldset>
+
+							</div>
+
+
+							<div class="col-sm-6">
+
+								<fieldset class="login-fieldset">
+
+									<legend class="login-form-legend">Log Into Your Account</legend>
+								</fieldset>
+
+							</div>
+						</div>
+
+
+
+
+
+
+
+					</div>
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" > 
+&lt;form&gt;
+&lt;fieldset class="signup-fieldset"&gt;
+&lt;legend class="signup-form-legend"&gt;Sign Up to Volunteer&lt;/legend&gt;
+...
+&lt;/fieldset&gt;
+&lt;/form&gt;
+
+&lt;fieldset class="login-fieldset"&gt;
+&lt;legend class="login-form-legend"&gt;Log Into Your Account&lt;/legend&gt;
+...
+&lt;/fieldset&gt;
+&lt;/form&gt;                                                               
+</code>
+</pre>
+					</figure>
+
+
+
+
+
+					<h4 class="sg">User Stats Block <span>(Account Management Screens)</span></h4>
+
+					<p>User Name, location, number of calls attempted, completed and petitions signed are used as page title on User Account Management screens. The display presentation varies depending on the viewport size. </p>
+
+					<div class="bs-example  image-example">
+
+
+
+
+						<div class="row">
+							<div class="col-sm-7">
+								<p> Standard Display </p>
+								<img src="assets/sg/sg_userstats.png" alt="screenshot" class="img-responsive"></div>
+
+							<div class="col-sm-5">
+								<p>Display at or below 768px</p>
+								<img src="assets/sg/sg_userstats_folded.png" alt="screenshot" class="img-responsive"></div>
+						</div>
+
+
+					</div>
+
+
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" > 
+                   
+</code>
+</pre>
+					</figure>
+
+
+
+					<h3 id="ui_subheader">Secondary Header</h3>
+					<p>Secondary Headers (not to consuse with Subheaders) are used on User Account Management Screens to separate content grouping. These are represented by legend. The corresponding icons are prepended to the legend via JavaScript: the class name assigned to the legend control what preassigned icons will display. </p>
+					<div class="bs-example image-example">
+
+						<legend class="personal"> Personal Information</legend>
+					</div>
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" > 
+&lt;legend class="personal"&gt; Personal Information&lt;/legend&gt; 
+&lt;script&gt;
+$("legend.personal").prepend("&lt;span class='glyphicon glyphicon-user' aria-hidden='true'&gt;&lt;/span&gt;");
+&lt;/script&gt;              
+</code>
+</pre>
+					</figure>
+
+
+					<h3 id="ui_sidepanel">Side Panel </h3>
+
+
+
+					<p>Side Panel is displayed on Sign Petition page sequences and on a Sign Up screen. It displays to the right of the form and collapses to an expandable "Read More" tab above the form when the viewport is at or below 768 px. Its display is controlled by the <a href="#grid_layout" class="smoothScroll">Bootstrap Grid</a> for the breakpoint and visability and JavaScrip for slide in/out behavior. <a href="javascript:void(0);" onClick="window.location.reload()">Reload screen capture below</a>.</p>
+					<div class="bs-example image-example image-padded">
+						<a href="#ui_sidepanel" onClick="window.location.reload()" alt="click image to reload animation"> <img src="assets/sg/sg_readmore_anime.gif" alt="screenshot" class="img-responsive" id="image"></a>
+
+						<script type="text/javascript">
+							$(document).ready(function () {
+								$("#image").attr("src", "assets/sg/sg_readmore_anime.gif?" + Math.random());
+							});
+						</script>
+					</div>
+
+
+
+
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" >                                          
+&lt;div class="container"&gt;
+&lt;div class="row"&gt;
+ &lt;div class="col-sm-7 panel panel-body sign-up-panel petition-sign"&gt;
+&lt;div class="visible-xs"&gt;
+&lt;div id="flip"&gt; &lt;a href="#" class="read-more-link"&gt;read more&lt;/a&gt;&lt;/div&gt;
+&lt;div class="sign-up-intro" id="panel"&gt;
+&lt;div class="petition-stats"&gt;
+... 
+&lt;/div&gt;
+...
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;form&gt;
+&lt;fieldset&gt;
+&lt;legend class="petition-legend"&gt;Your Information&lt;/legend&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-sm-12"&gt;
+&lt;p class="fields-descriptor"&gt;All fields in bold are required &lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+...
+&lt;/fieldset&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;                                                                                                                                      
+&lt;script&gt;
+$(document).ready(function() {
+$("#flip").click(function() {
+$("#panel").slideToggle("slow");
+});
+});
+&lt;/script&gt;                                               
+</code>
+</pre>
+					</figure>
+
+
+
+
+
+
+					<h3 id="ui_thumbcard">Thumbnail Card</h3>
+					<p>
+						Thumbnail cards are used to highlight Petitions/Surveys on the homepage and on the Petitions screen as "suggested" action items for the user to act upon.
+
+					</p>
+
+
+
+
+					<ul>
+						<li>
+							Thumbnail title character count is 72 characters max (same length as petition/survey title)
+
+						</li>
+					</ul>
+					<div class="bs-example">
+
+
+						<div class="row">
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<img src="assets/features/thumb_s1.jpg" alt="...">
+									<div class="caption">
+										<div class="image-tag"><span> Election 2016</span></div>
+
+										<h4><a href="">What Questions Do You Want Asked During the Democrat Debate?</a></h4>
+
+										<span class="task-type">  <span class="fa fa-phone"></span> Petition </span>
+
+									</div>
+								</div>
+							</div>
+
+
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<a href=""><img src="assets/features/thumb_s2.jpg" alt="..."></a>
+									<div class="caption">
+										<div class="image-tag"><span> Survey</span></div>
+
+										<h4><a href=" " >Quick 1 Question Survey</a></h4>
+
+										<span class="task-type">  <span class="fa fa-phone"></span> Survey</span>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="thumbnail">
+									<img src="assets/features/thumb_s4.jpg" alt="...">
+									<div class="caption">
+										<div class="image-tag"><span> Veterans Affairs Scandal</span></div>
+
+										<h4><a href="">Stand With Our Veterans</a></h4>
+
+										<span class="task-type">  <span class="fa fa-pencil"></span> Petition</span>
+
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+						</div>
+
+
+
+					</div>
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" >  
+&lt;div class="row"&gt;
+&lt;div class="col-md-4 col-sm-6 col-xs-6"&gt;
+&lt;div class="thumbnail"&gt;
+&lt;img src="assets/features/thumb_s1.jpg" alt="..." &gt;
+&lt;div class="caption"&gt;
+&lt;div class="image-tag"&gt;&lt;span&gt; Election 2016&lt;/span&gt;&lt;/div&gt;
+&lt;h4&gt;&lt;a href=""&gt;What Questions Do You Want Asked During the Democrat Debate?&lt;/a&gt;&lt;/h4&gt;
+&lt;span class="task-type"&gt;  &lt;span class="fa fa-phone"&gt;&lt;/span&gt; Petition &lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+ ...
+&lt;/div&gt;                                                  
+ </code>
+</pre>
+					</figure>
+
+					<h3 id="ui_thumblist">Thumbnail List</h3>
+
+					<p>
+
+						List of titles, stats, and thumbnails is used to show a list of surveys and petitions under user Account Management. The image type used for thumbnail list is the same one used in thumbnail card, with 2 by 1 ratio, with a <code>.img-responsive</code> Bootstrap class that allows images to size up/down depending on the view port size. The thumbnail does not dispaly on veiwport smaller than 768px, contlolled by <code>.hidden-xs</code> class assign to it's corresponding div.
+
+					</p>
+					<div class="bs-example  image-example">
+
+						<div class="row">
+
+							<div class="col-sm-9">
+								<p>Standard Display</p>
+								<img src="assets/sg/sg_thumblist_full.png" alt="screenshot" class="img-responsive">
+							</div>
+
+							<div class="col-sm-3">
+								<p>Display at or below 768px</p>
+								<img src="assets/sg/sg_thumblist_folded.png" alt="screenshot" class="img-responsive">
+							</div>
+
+
+						</div>
+
+					</div>
+
+
+
+
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" >  
+&lt;div class="row view-petitions-calls"&gt;
+&lt;div class="col-sm-2 hidden-xs"&gt;
+&lt;img alt="Petitions Photo" src="images/image_placeholders/344x172_thumb.jpg" class="img-responsive"&gt;
+&lt;/div&gt;
+&lt;/div&gt;                                                                     
+</code>
+</pre>
+					</figure>
+					<h3 id="ui_userstats">User Stats</h3>
+					<p>The numerical data, such as user statistics on the number of Petitions Signed and Calls Attempted, is highlighted in the “accent” color that may be customized based on each client’s preferences.  </p>
+
+					<div class="bs-example image-example">
+
+
+
+						<div class="row">
+
+							<div class="col-md-12 col-xs-4 volunteer-stats">
+								<strong>100</strong> Calls Attempted
+
+							</div>
+
+						</div>
+					</div>
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" > 
+                   
+</code>
+</pre>
+					</figure>
+
+					<h3 id="ui_social">Social Bottons</h3>
+					<p>The “Log In with Facebook” option is an alternative to a generic “Log In” that prompts for a user name and password. If additional "social buttons” options become necessary, please refer to <code><a href="css/sass/_bootstrap-social.scss" target="_blank">_bootstrap-social.scss</a></code>.</p>
+
+
+
+					<div class="bs-example image-example">
+
+						<div class="row">
+							<div class="col-sm-4">
+								<a class="btn btn-block btn-social btn-facebook">
+									<span class="fa fa-facebook"> </span> <span> Log in with Facebook </span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" > 
+&lt;div class="row"&gt;
+&lt;div class="col-sm-4"&gt;
+&lt;a class="btn btn-block btn-social btn-facebook"&gt;
+&lt;span class="fa fa-facebook"&gt; &lt;/span&gt; &lt;span&gt; Log in with Facebook &lt;/span&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;                 
+</code>
+</pre>
+					</figure>
+				</article>
+
+
+				<!-------------NAVIGATION ------------->
+
+
+				<article class="navigation">
+
+					<h2>Navigation</h2>
+					<h3 id="navigation_header">Header Navigation</h3>
+					<p>iVolunteers main navigation is sticky Bootstrap-based navigation that remains static on top of the screen as the page is being scrolled vertically. Then the resolution of the output devise is at or below 768px, the navigation collapses into a "burger" menu which will expand vertically in responce to being clicked click.
+
+					</p>
+					<p>
+						The "accent" color of the navigation links and the background color of the header may be customized to meet each client’s stylistic guidelines.</p>
+
+					<div class="bs-example image-example">
+
+						<div class="row">
+
+							<div class="col-sm-8">
+
+								<p> Standart Display</p>
+								<img src="assets/sg/sg_header.png" alt="screenshot" class="img-responsive">
+							</div>
+
+							<div class="col-sm-4">
+								<p>Display at or below 768px</p>
+								<img src="assets/sg/sg_header_folded.png" class="img-responsive" alt="screenshot"></div>
+						</div>
+					</div>
+
+
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" > 
+&lt;nav class="navbar navbar-default navbar-fixed-top"&gt;
+&lt;div class="container"&gt;
+&lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+&lt;div class="navbar-header"&gt;
+&lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"&gt;
+&lt;span class="sr-only" &gt;Toggle navigation&lt;/span&gt;
+&lt;span class="icon-bar" &gt; &lt;/span&gt;
+&lt;span class="icon-bar" &gt; &lt; /span&gt;
+&lt;span class="icon-bar"&gt;&lt;/ span&gt;
+&lt;/button &gt;
+&lt;img alt="Client Logo" src="assets/afp-black.png"&gt;
+&lt;/ div &gt;
+&lt;!-- Collect the nav links, forms, and other content for toggling -- &gt;
+&lt;div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"&gt;
+&lt;ul class="nav navbar-nav"&gt;
+&lt;li class="dropdown"&gt;
+&lt;a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" &gt;John Smith &lt; span class="caret"&gt; &lt; /span&gt;&lt; /a&gt;
+&lt;ul class="dropdown-menu" &gt;
+&lt;li&gt;&lt;a href="#" &gt;My Account&lt; /a &gt;&lt; /li&gt;
+&lt;li&gt;&lt;a href="#"&gt;Log Out&lt; /a &gt;&lt; /li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;Action Center&lt; /a &gt;&lt; /li&gt;
+&lt;li&gt;&lt;a href="#"&gt;Donate&lt; /a &gt;&lt; /li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- /.navbar-collapse --&gt;
+&lt;/div &gt;
+&lt;!-- /.container-fluid --&gt;
+&lt;/nav&gt;
+</code></pre></figure>
+
+
+
+
+					<h3 id="navigation_page">Page Level Navigation</h3>
+					<p>Page level navigation on the <strong>landing screen</strong> is used to "filter" betweeen Petitions and/or Surveys. </p>
+
+					<div class="bs-example  image-example">
+
+						<div class="row">
+
+							<div class="col-sm-12">
+								<img src="assets/sg/sg_pagenav_home.png" alt="screenshot" class="img-responsive">
+							</div>
+
+						</div>
+
+					</div>
+
+
+
+
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" >
+&lt;div class="row"&gt;
+&lt;div class="col-md-12"&gt;
+&lt;ul class="nav nav-tabs nav nav-filter"&gt;
+&lt;li role="presentation" class="active"&gt;&lt;a href="#"&gt;All&lt;/a&gt;&lt;/li&gt;
+&lt;li role="presentation"&gt;&lt;a href="#"&gt;&lt;span class="fa fa-phone"&gt;&lt;/span&gt; Surveys&lt;/a&gt; &lt;/li&gt;
+&lt;li role="presentation"&gt;&lt;a href="#"&gt; &lt;span class="fa fa-pencil"&gt;&lt;/span&gt; Petitions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+                  </code>
+                  </pre>
+					</figure>
+
+
+					<p>In addition, Page level navigation on the <strong>user account management screen</strong> allows to toggle thought various user accounts options. </p>
+
+
+					<div class="bs-example  image-example">
+
+						<div class="row">
+
+
+							<div class="col-sm-12">
+								<img src="assets/sg/sg_pagenav_accountmngt.png" class="img-responsive" alt="screenshot"></div>
+						</div>
+					</div>
+
+
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" >
+&lt;div class="row"&gt;
+&lt;div class="col-md-12"&gt;41
+&lt;!-- Account Nav Tabs  --&gt;
+&lt;ul class="nav nav-tabs nav-filter" role="tablist" id="#profile-tabs"&gt;
+&lt;li role="presentation" class="active nav-profile-link"&gt;
+&lt;a href="#account-settings" role="tab" data-toggle="tab" aria-controls="account-settings"&gt;Account Settings&lt;/a&gt;&lt;/li&gt;
+&lt;li role="presentation" class="nav-profile-link"&gt;
+&lt;a href="#signed-petitions" role="tab" data-toggle="tab" aria-controls="signed-petitions"&gt;  Signed Petitions&lt;/a&gt;
+&lt;/li&gt;
+&lt;li role="presentation" class="nav-profile-link"&gt;
+&lt;a href="#call-history" role="tab" data-toggle="tab"&gt; Call History&lt;/a&gt;
+&lt;/li&gt;
+&lt;li role="presentation" class="nav-profile-link"&gt;
+&lt;a href="#profile" role="tab" data-toggle="tab"&gt;Profile&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+                  </code>
+                  </pre>
+					</figure>
+
+
+
+
+					<h3 id="navigation_footer">Footer Navigation</h3>
+					<p>The content of the footer navigation is client specific and is to be entered in .html format through the iVolunteers admininstrative interface. </p>
+
+				</article>
+
+
+
+				<!---------  FORM ELEMENTS SECTIONS  --------->
+				<article class="form">
+
+					<h2>Form Elements</h2>
+
+					<!-- BASIC FORM  -->
+					<h3 id="form_basic">Basic Form </h3>
+					<p>The following controls are part of a basic form. The width of the input elements is controlled by the Bootstrap <code>.col-sm-x</code> div class. </p>
+					<div class="bs-example">
+						<form>
+							<fieldset>
+								<!--  <legend class="signup-form-legend">Form Legend</legend> -->
+
+
+								<div class="row">
+									<div class="col-sm-12">
+										<label for=" ">Regular Field</label>
+										<input type="text" class="form-control" placeholder="Input Placeholder">
+									</div>
+
+								</div>
+
+
+								<div class="row">
+									<div class="col-sm-12 required">
+										<label for=" ">Required Field</label>
+										<input type="text" class="form-control" placeholder="Input Placeholder">
+									</div>
+								</div>
+
+
+
+
+
+
+
+								<div class="row">
+									<div class="col-sm-12 required">
+										<label for=" ">Missing Required Field</label>
+										<input type="text" class="form-control missing-field" placeholder="Enter Required Information">
+									</div>
+
+								</div>
+
+								<div class="row item-select-row">
+
+									<div class="col-sm-12">
+										<label class="item-select-header">Selection Group</label>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">Item One</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">Item Two</label>
+										</div>
+
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" value="">Item Three</label>
+										</div>
+									</div>
+
+
+								</div>
+
+							</fieldset>
+						</form>
+
+
+					</div>
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" > 
+&lt;div class="row"&gt;
+&lt;div class="col-sm-12"&gt;
+&lt;label for=" ">Regular Field&lt;/label&gt;
+&lt;input type="text" class="form-control" placeholder="Input Placeholder"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+... 
+&lt;div class="row"&gt;
+&lt;div class="col-sm-12 required">
+&lt;label for=" "&gt;Required Field&lt;/label&gt;
+&lt;input type="text" class="form-control" placeholder="Input Placeholder"&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+...        
+&lt;div class="row"&gt;
+&lt;div class="col-sm-12 required">
+&lt;label  for=" ">Missing Required Field&lt;/label&gt;
+&lt;input type="text" class="form-control missing-field" placeholder="Enter Required Field"&gt;
+&lt;/div&gt;
+&lt;/div&gt;         
+...
+&lt;div class="row item-select-row"&gt;                     
+&lt;div class="col-sm-12"&gt;
+&lt;label class="item-select-header"&gt;Selection Grouping Label&lt;/label&gt;
+&lt;div class="checkbox"&gt;
+&lt;label for=" ">
+&lt;input type="checkbox" value=""&gt;Item One&lt;/label&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre></figure>
+
+
+					<!--  LEGENDs -->
+
+
+					<h3 id="form_legend">Form Legend </h3>
+					<p>A form <code>legend</code> can be either a <strong>generic legend</strong> (Sign This Petion screen) or serve as a <strong>page title</strong> (Log In screen). </p>
+					<div class="bs-example">
+						<form>
+							<fieldset>
+								<legend class="petition-legend" style="margin-bottom: -20px;">Generic Form Legend</legend>
+							</fieldset>
+						</form>
+
+
+					</div>
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html"> 
+&lt;fieldset&gt;
+&lt;legend &gt;Regular Form Legend&lt; /legend&gt; 
+&lt;/fieldset&gt;
+  </code></pre></figure>
+
+					<p>On screens with forms that do not contain a background banner housing an &lt;h2&gt;, the form Legend serves as a page Header.</p>
+					<div class="bs-example">
+						<form>
+							<fieldset>
+								<legend class="signup-form-legend" style="margin-bottom: -20px;">Page Title Form Legend</legend>
+
+							</fieldset>
+						</form>
+
+
+					</div>
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html"> 
+&lt;fieldset&gt;
+&lt;legend class="header-form-legend"&gt;Page Title as Form Legend&lt;/legend&gt;
+&lt;/fieldset&gt;
+  </code></pre></figure>
+
+
+					<!-- BOTTONS -->
+
+					<h3 id="form_buttons">Buttons</h3>
+					<p>
+
+						There are two type of buttons in iVolunteers: <code>.btn-primary</code> (conveys most emphasis) and <code>.btn-default</code>. The width of the button is controlled by the <a href="#grid_overview" class="smoothScroll">Grid</a>, or <code>.col-..</code> class that has been assigned to the <code>&lt;div&gt;</code> in which the button is placed. The styling of the buttons can be customized according to each client's needs.
+
+
+					</p>
+
+					<div class="bs-example">
+						<div class="row">
+							<div class="col-sm-6">
+								<button type="submit" class="btn btn-primary"> Sign Petition </button>
+							</div>
+
+							<div class="col-sm-6">
+								<button type="submit" class="btn btn-default">Load More </button>
+							</div>
+						</div>
+					</div>
+
+
+					<figure class="highlight"><pre>
+<code class="language-html" data-lang="html">                           
+ &lt;button type="submit" class="btn btn-primary"&gt; Sign Now  &lt;/button&gt;
+ &lt;button type="submit" class="btn btn-default"&gt; Load More  &lt;/button&gt;
+                            </code></pre></figure>
+
+
+				</article>
+
+
+
+
+				<article class="grid">
+
+
+					<!---------  GRID SECTIONS  --------->
+					<article class="grid">
+
+						<h2>Grid System</h2>
+						<h3 id="grid_overview">Grid Overview</h3>
+						<p>iVolunteers is build based on Bootstrap's responsive, mobile first fluid grid system that scales up to 12 columns. The grid consists of predefined classes that allow for various layout options. </p>
+
+						<ul>
+							<li>Rows are used to create horizontal groups of columns and are placed within a fixed-width <code>.container</code> or full-width <code>.container-fluid</code> for proper alignment and padding.</li>
+							<li>
+
+								Content should be placed into columns <code>.col-..-..</code>, and columns can the be the only immediate children of rows.
+
+
+							</li>
+							<li>
+
+								Predefined grid classes, such as <code>.row</code> and <code>.col-xs-4</code> are used for making grid layouts.
+
+
+							</li>
+							<li>The spacing between the columns, or gutters, is controlled through <code>bootstrap.css</code> pre-defined <code>padding</code></li>
+							<li>If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.</li>
+							<li>
+
+								Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices: applying any <code>.col-md-*</code> class to an element will not only affect its styling on medium devices but also on large devices if a <code>.col-lg-*</code> class is not present.
+
+							</li>
+						</ul>
+
+
+
+
+						<h3 id="grid_options">Grid Options</h3>
+
+						<div class="table-responsive">
+							<table class="table table-bordered table-striped">
+								<thead>
+									<tr>
+										<th></th>
+										<th> Extra small devices <small>Phones (&lt;768px)</small> </th>
+										<th> Small devices <small>Tablets (≥768px)</small> </th>
+										<th> Medium devices <small>Desktops (≥992px)</small> </th>
+										<th> Large devices <small>Desktops (≥1200px)</small> </th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="text-nowrap" scope="row">Grid behavior</th>
+										<td>Horizontal at all times</td>
+										<td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+									</tr>
+									<tr>
+										<th class="text-nowrap" scope="row">Container width</th>
+										<td>None (auto)</td>
+										<td>750px</td>
+										<td>970px</td>
+										<td>1170px</td>
+									</tr>
+									<tr>
+										<th class="text-nowrap" scope="row">Class prefix</th>
+										<td><code>.col-xs-</code></td>
+										<td><code>.col-sm-</code></td>
+										<td><code>.col-md-</code></td>
+										<td><code>.col-lg-</code></td>
+									</tr>
+									<tr>
+										<th class="text-nowrap" scope="row"># of columns</th>
+										<td colspan="4">12</td>
+									</tr>
+									<tr>
+										<th class="text-nowrap" scope="row">Column width</th>
+										<td class="text-muted">Auto</td>
+										<td>~62px</td>
+										<td>~81px</td>
+										<td>~97px</td>
+									</tr>
+									<tr>
+										<th class="text-nowrap" scope="row">Gutter width</th>
+										<td colspan="4">30px (15px on each side)</td>
+									</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+
+
+
+						<h3 id="grid_ordering">Column Ordering</h3>
+						<p>Order of built-in grid columns can be changed by adding <code>.col-md-push-* </code>and <code>.col-md-pull-*</code> modifier classes.</p>
+
+						<div class="bs-example">
+							<div class="container">
+								<div class="row show-grid">
+									<div class="col-md-9 col-md-push-3"> 1st: .col-md-9 .col-md-push-3</div>
+									<div class="col-md-3 col-md-pull-9"> 2nd: .col-md-3 .col-md-pull-9</div>
+								</div>
+							</div>
+						</div>
+
+						<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" >
+&lt;div class ="container"&gt;
+&lt;div class="row show-grid"&gt;
+&lt;div class="col-md-9 col-md-push-3"&gt; 1st: .col-md-9 .col-md-push-3&lt;/div&gt;
+&lt;div class="col-md-3 col-md-pull-9"&gt; 2nd: .col-md-3 .col-md-pull-9&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;					
+					</code>
+					</pre>
+						</figure>
+
+
+						<h3 id="grid_visibility">Element Visibility</h3>
+
+						<p>Page elements (not limited to columns) can be hidden by adding <code>.hidden-*</code> modifier classes. Similarly, hidden columns can be made visible by adding <code>.visible-* </code> modifier class.</p>
+
+						<div class="bs-example">
+							<div class="container">
+								<div class="row visible-on show-grid">
+
+									<div class="col-xs-6 col-sm-3">
+
+										<span class="hidden-xs">Extra small</span>
+										<span class="visible-xs">&#10004; Visible on x-small</span>
+									</div>
+
+									<div class="col-xs-6 col-sm-3">
+
+										<span class="hidden-sm">Small</span>
+										<span class="visible-sm">&#10004; Visible on small</span>
+									</div>
+
+									<div class="clearfix visible-xs"></div>
+
+									<div class="col-xs-6 col-sm-3">
+
+										<span class="hidden-md">Medium</span>
+										<span class="visible-md">&#10004; Visible on medium</span>
+									</div>
+
+									<div class="col-xs-6 col-sm-3">
+										<span class="hidden-lg">Large</span>
+										<span class="visible-lg">&#10004; Visible on large</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<figure class="highlight"><pre>
+<code class="language-html" data-lang="html" > 
+&lt;div class = "container"&gt;
+&lt;div class = "row visible-on show-grid"&gt;
+&lt;div class = "col-xs-6 col-sm-3"&gt;
+&lt;span class = "hidden-xs"&gt;Extra small&lt;/span&gt;
+&lt;span class = "visible-xs"&gt;&#10004; Visible on x-small&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class = "col-xs-6 col-sm-3"&gt;
+&lt;span class = "hidden-sm"&gt;Small&lt;/span&gt;
+&lt;span class = "visible-sm"&gt;&#10004; Visible on small&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class = "clearfix visible-xs"&gt;&lt;/div&gt;
+&lt;div class = "col-xs-6 col-sm-3"&gt;
+&lt;span class = "hidden-md"&gt;Medium&lt;/span&gt;
+&lt;span class = "visible-md"&gt;&#10004; Visible on medium&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class = "col-xs-6 col-sm-3"&gt;
+&lt;span class = "hidden-lg"&gt;Large&lt;/span&gt;
+&lt;span class = "visible-lg"&gt;&#10004; Visible on large&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;  
+&lt;/div&gt;
+</code>
+</pre>
+						</figure>
+
+
+
+
+
+
+
+					</article>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- /#wrapper -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Menu Toggle Script -->
+	<script>
+		$("#menu-toggle").click(function (e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+	</script>
+
+	<!-- Append Glyphicon Icons to Legends script -->
+	<script>
+		$("legend.personal").prepend("<span class='glyphicon glyphicon-user' aria-hidden='true'></span>");
+	</script>
+
+</body>
+
+</html>

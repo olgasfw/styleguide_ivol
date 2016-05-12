@@ -1,0 +1,249 @@
+//main iVolunteers Master style sheets
+ @import "ivol";
+
+
+///Stylesheet that renders Code view
+ @import "docs";
+
+// Sidebar stylesheet 
+ @import "sidebar";
+
+// Style Guide boiler place CSS
+@import "frame";
+
+// Social Bottons CSS
+@import "bootstrap-social";
+
+// Style sheet for this STYLEGUIDE specifically
+
+		#panel_about,
+		#panel_color,
+		#panel_fonts,
+		#panel_images,
+		#panel_ui,
+		#panel_navigation,
+		#panel_form,
+		#panel_grid {
+			display: none; 
+		}
+		
+		body {margin-top: 50px;}
+		
+		p strong {
+			font-weight: 500;
+		}
+		
+		.roboto,
+		.roboto-slab {
+			font-weight: 400;
+		}
+		
+		.roboto {
+			font-family: 'Roboto', sans-serif;
+		}
+		
+		.roboto-slab {
+			font-family: 'Roboto Slab', serif;
+		}
+		
+		div.sg-color {
+			width: 100px;
+		}
+		
+		div.sg-color-swatch {
+			background-color: #b71c1c;
+			width: 100px;
+			height: 100px;
+			-moz-border-radius: 50px;
+			-webkit-border-radius: 50px;
+			border-radius: 50px;
+		}
+		
+		.sg-color-value,
+		.sg-color-name {
+			text-align: center;
+		}
+		
+		h1,
+		h2 {
+			text-shadow: 2px 1px 1px rgba(0, 0, 0, 0);
+		}
+		
+		h1 {
+			padding: 10px;
+			font-weight: 300;
+		}
+		
+		h2 {
+	
+			font-size: 2.7em;
+			font-weight: 100;
+			text-transform: uppercase;
+			color: #697576;
+			border-bottom: 1px solid #ebebeb;
+			letter-spacing: 2px;
+		
+		}
+		
+		h2.sg-h2 {
+			letter-spacing: 0;
+			padding-top: 20px;
+			padding-left: 0;
+			text-transform: uppercase;
+			margin-left: 10px;
+			margin-right: 10px;
+		
+		}
+		
+		h2.sg-h2 a {
+			color: #697576;
+			text-decoration: none;
+		}
+		
+		h2.sg-h2 a:hover,
+		h2.sg-h2 a:active {
+			text-decoration: none;
+			color: #fff;
+			opacity: .7;
+		}
+		
+		h2#overview {
+			margin-top: -30px; 
+			padding-top: 80px;
+			
+		}
+		
+		h3 {
+	
+			font-size: 1.6em;
+			font-weight: 500;
+			margin-top: 20px;
+			margin-bottom: 5px;
+			opacity: 0.7;
+			padding-top: 60px;
+			margin-top: -30px;
+			padding-bottom: 5px;
+		}
+		
+		h3 span {
+			font-weight: 100;
+		}
+		
+		h4.sg {
+			color: #818181;
+			margin-top: 40px;
+			font-weight: 500;
+			font-size: 1.4em;
+			opacity: .8;
+		
+			
+		}
+		
+		a.details {
+			font-weight: 400;
+			color: #666;
+			background-color: #eee;
+			border-radius: 2px;
+			font-size: 15px;
+			padding: 2px 10px;
+			display: inline-block;
+		}
+		
+		li,
+		p {
+			font-size: 1.3em;
+			font-weight: 200;
+		}
+		
+		p.info {
+			font-weight: 300;
+			color: #999;
+			font-size: 1.1em;
+		}
+		
+		.sg-navlist li {
+			font-size: 1em;
+		}
+		
+		#panel {
+			display: none;
+		}
+		
+		td .glyphicon {
+			font-size: 2em;
+			color: #666;
+		}
+		
+		td strong {
+			text-transform: uppercase;
+			font-weight: 500;
+		}
+		
+		h2 {
+			padding-top: 30px;
+		}
+		
+		ul.sidebar-nav {
+			padding: 0 20px;
+		}
+		
+		li.sidebar-brand a {
+			font-weight: 500;
+			font-size: 1.1em;
+			text-transform: uppercase;
+			border-bottom: 1px solid #eee;
+			padding-bottom: 0;
+			padding-left: -25px;
+		}
+		
+		.image-example img {
+			border: dashed 1px #ccc;
+			margin-bottom: 10px;
+		}
+		
+		.image-padded img {
+			padding: 10px;
+		}
+		
+		.image-example p {
+			font-size: .9em;
+			font-weight: 500;
+		}
+		
+		.container-fluid {
+			margin-right: 0;
+			margin-left: 0;
+			max-width: 1120px;
+		}
+		
+		nav > .container-fluid {
+			margin-right: 0;
+			margin-left: 0;
+			max-width: 100%;
+		}
+		
+		h1 span,
+		h2 span,
+		h3 span,
+		h4 span {
+			font-weight: 300;
+		}
+		
+		.show-grid {
+			background-color: #ccc;
+		}
+		
+		@media print  {
+		#sidebar-wrapper {
+			display: none;
+		}
+		
+		#page-content-wrapper {
+			margin-left: -250px;
+			width: 100%;
+		}
+			
+			@page {
+margin: 0.5cm;
+}
+		}
